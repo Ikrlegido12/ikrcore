@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiscordProjectSettings">
+    <option name="show" value="PROJECT" />
+    <option name="description" value="Creando mi plugin de minecraft" />
+    <option name="applicationTheme" value="classic" />
+    <option name="iconsTheme" value="material" />
+    <option name="button1Title" value="Tutorial" />
+    <option name="button1Url" value="https://www.youtube.com/watch?v=R9qVJLyF1x4&amp;list=PLaJSxZW9ZWakB054BGd214DJUrEfZdjEV&amp;index=1&amp;pp=iAQB" />
+    <option name="button2Title" value="" />
+    <option name="button2Url" value="" />
+    <option name="customApplicationId" value="" />
+  </component>
+</project>

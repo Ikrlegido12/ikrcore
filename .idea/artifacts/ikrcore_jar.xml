@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ikrcore:jar">
+    <output-path>$USER_HOME$/Desktop/Programar/IkrCore</output-path>
+    <root id="archive" name="ikrcore.jar">
+      <element id="module-output" name="ikrcore" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,10 @@
+messages:
+  prevent_block_break: "&cNo tienes permisos."
+
+config:
+  welcome_message:
+    enabled: true # Booleano
+    message:
+    - "&b-----------------------------"
+    - "&fBienvenido &e%player%"
+    - "&b-----------------------------" # multiple string

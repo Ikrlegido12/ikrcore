@@ -1,0 +1,13 @@
+main: ic.Ikrlegido12.IkrCore
+version: beta-0.2
+name: IkrCore
+author: Ikrlegido12
+description: Un plugin programado por Ikrlegido12.
+api-version: 1.16
+commands:
+  ikrcore:
+    description: Comando principal.
+    aliases:
+      - ikrlegidoplugin
+      - iamverycool
+      - ic
