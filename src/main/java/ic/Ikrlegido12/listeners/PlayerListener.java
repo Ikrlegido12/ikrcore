@@ -3,6 +3,8 @@ package ic.Ikrlegido12.listeners;
 import ic.Ikrlegido12.IkrCore;
 
 import ic.Ikrlegido12.config.MainConfigManager;
+import ic.Ikrlegido12.utils.MessageUtils;
+import ic.Ikrlegido12.utils.message;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -35,10 +37,12 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void brokeBlocks(BlockBreakEvent event){
         Player player = event.getPlayer();
-        if(player.getWorld().toString().equalsIgnoreCase("spawn") && !player.hasPermission("ikrcore.admin")){
+        if(player.getWorld().getName().equals("spawn") && !player.hasPermission("miplugin.admin")){
             event.setCancelled(true);
-            event.getPlayer().sendMessage(
-                    ic.Ikrlegido12.utils.message.sendMsg("&cNo puedes romper bloques en el spawn."));
+            player.sendMessage(message.sendMsg(plugin.getMainConfigManager().getPreventBlockBreak()));
+        } else {
+            String prefix = "&7[&cIkrCore&7] ";
+            player.sendMessage(MessageUtils.getColoredMessage(prefix + "Has roto un plugin como admin."));
         }
     }
     @EventHandler
@@ -61,7 +65,7 @@ public class PlayerListener implements Listener {
     public void badMessage(AsyncPlayerChatEvent event){
         Player player = event.getPlayer();
         event.setCancelled(true);
-        player.sendMessage(ic.Ikrlegido12.utils.message.sendMsg(plugin.getMainConfigManager().getPreventBlockBreak()));
+        player.sendMessage(ic.Ikrlegido12.utils.message.sendMsg("No digas palabras inapropiadas."));
     }
 
 

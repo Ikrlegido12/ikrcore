@@ -44,8 +44,10 @@ public class MainCommand implements CommandExecutor {
 
             } else if(args[0].equalsIgnoreCase("get")){
                 subCommandGet(sender, args);
-            } else {
+            } else if(args[0].equalsIgnoreCase("help")){
                 help(sender);
+            } else if(args[0].equalsIgnoreCase("reload")){
+                subCommandReload(sender);
             }
 
         }else{
