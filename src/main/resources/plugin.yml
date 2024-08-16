@@ -1,5 +1,5 @@
 main: ic.Ikrlegido12.IkrCore
-version: beta-0.4
+version: beta-0.5
 name: IkrCore
 author: Ikrlegido12
 description: Un plugin programado por Ikrlegido12.
@@ -18,7 +18,7 @@ commands:
   experiencia:
     description: Comando de XP.
 
-    # spawn:
-   # description: Te teletransporta al spawn.
-  #  aliases:
- #     - hub
+  spawn:
+    description: Te teletransporta al spawn.
+    aliases:
+      - hub

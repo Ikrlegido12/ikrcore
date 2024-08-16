@@ -3,6 +3,7 @@ package ic.Ikrlegido12;
 import ic.Ikrlegido12.commands.FlyCommand;
 import ic.Ikrlegido12.commands.MainCommand;
 
+import ic.Ikrlegido12.commands.SpawnCommand;
 import ic.Ikrlegido12.commands.XpCommand;
 import ic.Ikrlegido12.config.MainConfigManager;
 import ic.Ikrlegido12.listeners.PlayerListener;
@@ -37,7 +38,7 @@ public class IkrCore extends JavaPlugin {
         this.getCommand("ikrcore").setExecutor(new MainCommand(this));
         this.getCommand("volar").setExecutor(new FlyCommand(this));
         this.getCommand("experiencia").setExecutor(new XpCommand(this));
-        //this.getCommand("spawn").setExecutor(new SpawnCommand(this));
+        this.getCommand("spawn").setExecutor(new SpawnCommand(this));
     }
     public void registerEvents(){
         getServer().getPluginManager().registerEvents(new PlayerListener(this),this);

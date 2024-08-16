@@ -28,11 +28,11 @@ public class XpCommand implements CommandExecutor {
         try {
             cantidad = Integer.parseInt(args[0]);
             if(cantidad <= 0){
-                sender.sendMessage(message.sendMsg("&cCantidad inválida."));
+                sender.sendMessage(message.sendMsg(plugin.getMainConfigManager().getInvalidNumber()));
                 return true;
             }
         } catch(NumberFormatException e){
-            sender.sendMessage(message.sendMsg("&cCantidad inválida."));
+            sender.sendMessage(message.sendMsg(plugin.getMainConfigManager().getInvalidNumber()));
             return true;
         }
         Player player = null;

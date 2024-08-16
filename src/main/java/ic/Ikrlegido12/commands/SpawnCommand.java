@@ -1,14 +1,14 @@
-/* package ic.Ikrlegido12.commands;
+package ic.Ikrlegido12.commands;
 
 import ic.Ikrlegido12.IkrCore;
 import ic.Ikrlegido12.utils.message;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+
+import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.player.PlayerTeleportEvent;
 
 import static org.bukkit.Bukkit.getWorld;
 
@@ -27,11 +27,10 @@ public class SpawnCommand implements CommandExecutor {
             return true;
 
         }
+        Location location = new Location(Bukkit.getWorld("spawn"), 0, -59, 0,0,0);
         Player player = (Player) sender;
-        Bukkit.getPlayer(player);
+        player.teleport(location);
         return false;
     }
-    public void teleportToSpawn(PlayerTeleportEvent event, Player player){
-        teleport(player getWorld("spawn"), 0, -59,0);
-    }
-} */
+
+}

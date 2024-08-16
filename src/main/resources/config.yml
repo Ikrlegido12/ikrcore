@@ -1,6 +1,7 @@
 messages:
   prefix: "&7[&cIkrCore&7]"
   prevent_block_break: "&cNo tienes permisos."
+  invalid_number: "&cNúmero invalido"
 
 config:
   welcome_message:
