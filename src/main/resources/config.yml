@@ -1,4 +1,5 @@
 messages:
+  prefix: "&7[&cIkrCore&7]"
   prevent_block_break: "&cNo tienes permisos."
 
 config:

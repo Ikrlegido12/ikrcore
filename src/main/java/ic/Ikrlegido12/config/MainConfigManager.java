@@ -12,6 +12,7 @@ public class MainConfigManager {
     private IkrCore plugin;
 
     private String preventBlockBreak;
+    private String prefix;
     private boolean welcomeMessageEnabled;
     private List<String> welcomeMessageMessage;
 
@@ -24,6 +25,7 @@ public class MainConfigManager {
 
     public void loadConfig(){
         FileConfiguration config = configFile.getConfig();
+        prefix = config.getString("messages.prefix");
         preventBlockBreak = config.getString("messages.prevent_block_break");
         welcomeMessageEnabled = config.getBoolean("config.welcome_message.enabled");
         welcomeMessageMessage = config.getStringList("config.welcome_message.message");
@@ -33,7 +35,9 @@ public class MainConfigManager {
         configFile.reloadConfig();
         loadConfig();
     }
-
+    public String getPrefix() {
+        return prefix;
+    }
     public String getPreventBlockBreak() {
         return preventBlockBreak;
     }

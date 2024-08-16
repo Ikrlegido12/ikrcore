@@ -37,7 +37,7 @@ public class PlayerListener implements Listener {
     @EventHandler
     public void brokeBlocks(BlockBreakEvent event){
         Player player = event.getPlayer();
-        if(player.getWorld().getName().equals("spawn") && !player.hasPermission("miplugin.admin")){
+        if(player.getWorld().getName().equalsIgnoreCase("spawn") && !player.hasPermission("ikrcore.admin")){
             event.setCancelled(true);
             player.sendMessage(message.sendMsg(plugin.getMainConfigManager().getPreventBlockBreak()));
         } else {
