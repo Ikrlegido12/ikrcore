@@ -6,8 +6,8 @@ Si la version no es compatible no hay soporte.
 
 | Version    | Soporte            |
 | ---------- | ------------------ |
-| MC 1.18    | :white_check_mark: |
-| MC 1.16    | :x:                |
+| MC >1.17   | :white_check_mark: |
+| MC <1.16   | :x:                |
 | Java >17   | :white_check_mark: |
 | Java <16   | :x:                |
 
